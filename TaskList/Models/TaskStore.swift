@@ -5,10 +5,11 @@
 //  Created by mohamed  habib on 08/06/2020.
 //  Copyright © 2020 mohamed  habib. All rights reserved.
 //
+import Combine
 
-class TaskStore {
+class TaskStore: ObservableObject {
 
-    var tasks = [
+  @Published  var tasks = [
        "Code a SwiftUI app",
        "Book an escape room",
        "Walk the cat",

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var taskStore: TaskStore
+  @ObservedObject var taskStore: TaskStore
     @State var modelIsPresented = false
     
     var body: some View {
@@ -25,6 +25,7 @@ struct ContentView: View {
             trailing:
             Button(action: {
                 self.modelIsPresented = true
+                print("tapped")
             }) {
                 Image(systemName: "plus")
             })
