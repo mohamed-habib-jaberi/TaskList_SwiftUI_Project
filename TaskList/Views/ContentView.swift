@@ -21,6 +21,9 @@ struct ContentView: View {
             ForEach(taskStore.tasks) { task in
               Text(task.name)
           }
+            .onDelete { indexSet in
+                self.taskStore.tasks.remove(atOffsets: indexSet)
+            }
          }
         .navigationBarTitle("Tasks")
         .navigationBarItems(
