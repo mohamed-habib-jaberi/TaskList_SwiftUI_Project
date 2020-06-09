@@ -21,12 +21,18 @@ struct ContentView: View {
             ForEach(taskStore.tasks) { task in
               Text(task.name)
           }
+            .onMove{ sourceIndices, distinationIndex in
+                
+                self.taskStore.tasks.move(fromOffsets: sourceIndices, toOffset: distinationIndex)
+                
+            }
             .onDelete { indexSet in
                 self.taskStore.tasks.remove(atOffsets: indexSet)
             }
          }
         .navigationBarTitle("Tasks")
         .navigationBarItems(
+            leading: EditButton(),
             trailing:
             Button(action: {
                 self.modelIsPresented = true
