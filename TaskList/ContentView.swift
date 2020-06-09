@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var taskStore = TaskStore()
+    var taskStore: TaskStore
     
     var body: some View {
         
@@ -33,6 +33,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(taskStore: TaskStore())
     }
 }
