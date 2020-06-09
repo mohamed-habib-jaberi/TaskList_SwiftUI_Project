@@ -30,7 +30,7 @@ struct ContentView: View {
             })
         }
         .sheet(isPresented: $modelIsPresented) {
-            NewTaskView()
+            NewTaskView(taskStore: self.taskStore)
         }
        
     }
