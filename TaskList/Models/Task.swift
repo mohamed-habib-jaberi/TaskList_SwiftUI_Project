@@ -5,8 +5,11 @@
 //  Created by mohamed  habib on 08/06/2020.
 //  Copyright © 2020 mohamed  habib. All rights reserved.
 //
+import Foundation
 
-struct Task {
+struct Task: Identifiable {
+    let id = UUID()
+    
     var name: String
     var completed = false
 }

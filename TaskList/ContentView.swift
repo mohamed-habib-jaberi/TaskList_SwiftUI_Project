@@ -9,8 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var taskStore = TaskStore()
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        // Task without UUID
+//        List(taskStore.tasks.indices) { index in
+//            Text(self.taskStore.tasks[index].name)
+//        }
+        
+        // Add UUID
+//        List(taskStore.tasks, id: \.id) { task in
+//            Text(task.name)
+//        }
+        
+        // Add UUID and Identifiable protocole
+              List(taskStore.tasks) { task in
+                  Text(task.name)
+              }
     }
 }
 
