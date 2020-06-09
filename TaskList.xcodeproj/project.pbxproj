@@ -19,6 +19,7 @@
 		61A121BE248FD49800B1937E /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121BD248FD49800B1937E /* RowView.swift */; };
 		61A121C1248FD83500B1937E /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121C0248FD83500B1937E /* ForEach.swift */; };
 		61A121C3248FD85C00B1937E /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121C2248FD85C00B1937E /* IndexedCollection.swift */; };
+		61A121C7248FDB0800B1937E /* TaskEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121C6248FDB0800B1937E /* TaskEditingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		61A121BD248FD49800B1937E /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		61A121C0248FD83500B1937E /* ForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
 		61A121C2248FD85C00B1937E /* IndexedCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
+		61A121C6248FDB0800B1937E /* TaskEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				61A121BA248F9EE100B1937E /* NewTaskView.swift */,
 				61A121A5248E8D2700B1937E /* ContentView.swift */,
 				61A121BD248FD49800B1937E /* RowView.swift */,
+				61A121C6248FDB0800B1937E /* TaskEditingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				61A121BB248F9EE100B1937E /* NewTaskView.swift in Sources */,
 				61A121A2248E8D2700B1937E /* AppDelegate.swift in Sources */,
 				61A121A4248E8D2700B1937E /* SceneDelegate.swift in Sources */,
+				61A121C7248FDB0800B1937E /* TaskEditingView.swift in Sources */,
 				61A121A6248E8D2700B1937E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

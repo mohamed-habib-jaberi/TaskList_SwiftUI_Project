@@ -18,7 +18,7 @@ struct ContentView: View {
         NavigationView {
 
          List {
-            ForEach(taskStore.tasks.indices) { index in
+            ForEach(taskStore.tasks) { index in
                 RowView(task: self.$taskStore.tasks[index])
           }
             .onMove{ sourceIndices, distinationIndex in
