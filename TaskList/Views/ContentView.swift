@@ -17,15 +17,17 @@ struct ContentView: View {
         
         NavigationView {
 
-          List(taskStore.tasks) { task in
+         List {
+            ForEach(taskStore.tasks) { task in
               Text(task.name)
           }
+         }
         .navigationBarTitle("Tasks")
         .navigationBarItems(
             trailing:
             Button(action: {
                 self.modelIsPresented = true
-                print("tapped")
+                print("tapped ")
             }) {
                 Image(systemName: "plus")
             })
