@@ -11,23 +11,28 @@ import SwiftUI
 struct ContentView: View {
     
     var taskStore: TaskStore
+    @State var modelIsPresented = false
     
     var body: some View {
         
-        // Task without UUID
-//        List(taskStore.tasks.indices) { index in
-//            Text(self.taskStore.tasks[index].name)
-//        }
-        
-        // Add UUID
-//        List(taskStore.tasks, id: \.id) { task in
-//            Text(task.name)
-//        }
-        
-        // Add UUID and Identifiable protocole
-              List(taskStore.tasks) { task in
-                  Text(task.name)
-              }
+        NavigationView {
+
+          List(taskStore.tasks) { task in
+              Text(task.name)
+          }
+        .navigationBarTitle("Tasks")
+        .navigationBarItems(
+            trailing:
+            Button(action: {
+                self.modelIsPresented = true
+            }) {
+                Image(systemName: "plus")
+            })
+        }
+        .sheet(isPresented: $modelIsPresented) {
+            NewTaskView()
+        }
+       
     }
 }
 

@@ -19,7 +19,9 @@ struct NewTaskView: View {
 }
 
 struct NewTaskView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewTaskView()
-    }
+    
+                    static var previews: some View {
+                        NewTaskView()
+                    }
+
 }
