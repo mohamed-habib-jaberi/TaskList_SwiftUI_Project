@@ -18,8 +18,8 @@ struct ContentView: View {
         NavigationView {
 
          List {
-            ForEach(taskStore.tasks) { task in
-              Text(task.name)
+            ForEach(taskStore.tasks.indices) { index in
+                RowView(task: self.$taskStore.tasks[index])
           }
             .onMove{ sourceIndices, distinationIndex in
                 
@@ -53,3 +53,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(taskStore: TaskStore())
     }
 }
+
