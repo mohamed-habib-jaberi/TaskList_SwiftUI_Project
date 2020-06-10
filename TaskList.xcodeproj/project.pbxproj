@@ -99,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				61A121B6248E8D8100B1937E /* Task.swift */,
-				61A121B8248E8DE200B1937E /* TaskStore.swift */,
 				61A121C82490F3BE00B1937E /* Task.Priority.swift */,
+				61A121B8248E8DE200B1937E /* TaskStore.swift */,
 				61A121CA2490F4FC00B1937E /* TaskStore.PrioritizedTasks.swift */,
 			);
 			path = Models;

@@ -22,4 +22,36 @@ class TaskStore: ObservableObject {
        "100 movie reboot marathon"
      ].map { Task(name: $0) }
 
+    @Published var prioritazedTasks = [
+        PrioritazedTasks(
+            priority: .High,
+            names: [ "Code a SwiftUI app",
+                  "Book an escape room",
+                  "Walk the cat",
+                  "Pick up heavy things and put them down"]),
+        PrioritazedTasks(
+            priority: .meduim,
+            names: [
+                "Make karaoke playlist",
+                      "Present at iOS meetup group"]),
+        PrioritazedTasks(
+            priority: .low,
+            names: ["Climb El Capitan"]),
+        PrioritazedTasks(
+            priority: .no,
+            names: ["Learn to make baklava",
+                  "Play disc golf in every state",
+                  "100 movie reboot marathon"])
+    ]
+}
+
+private extension TaskStore.PrioritazedTasks{
+    
+    init(priority: Task.Priority, names: [String]) {
+        self.init(
+            priority : priority,
+            tasks: names.map{ Task(name: $0)}
+        )
+    }
+    
 }
