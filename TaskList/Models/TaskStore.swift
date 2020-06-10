@@ -33,7 +33,7 @@ class TaskStore: ObservableObject {
             priority: .meduim,
             names: [
                 "Make karaoke playlist",
-                      "Present at iOS meetup group"]),
+                "Present at iOS meetup group"]),
         PrioritazedTasks(
             priority: .low,
             names: ["Climb El Capitan"]),
@@ -53,5 +53,4 @@ private extension TaskStore.PrioritazedTasks{
             tasks: names.map{ Task(name: $0)}
         )
     }
-    
 }

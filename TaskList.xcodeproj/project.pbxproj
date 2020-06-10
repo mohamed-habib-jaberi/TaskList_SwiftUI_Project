@@ -22,6 +22,7 @@
 		61A121C7248FDB0800B1937E /* TaskEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121C6248FDB0800B1937E /* TaskEditingView.swift */; };
 		61A121C92490F3BE00B1937E /* Task.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121C82490F3BE00B1937E /* Task.Priority.swift */; };
 		61A121CB2490F4FC00B1937E /* TaskStore.PrioritizedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121CA2490F4FC00B1937E /* TaskStore.PrioritizedTasks.swift */; };
+		61A121CD249102ED00B1937E /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121CC249102ED00B1937E /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		61A121C6248FDB0800B1937E /* TaskEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditingView.swift; sourceTree = "<group>"; };
 		61A121C82490F3BE00B1937E /* Task.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.Priority.swift; sourceTree = "<group>"; };
 		61A121CA2490F4FC00B1937E /* TaskStore.PrioritizedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.PrioritizedTasks.swift; sourceTree = "<group>"; };
+		61A121CC249102ED00B1937E /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				61A121BA248F9EE100B1937E /* NewTaskView.swift */,
 				61A121A5248E8D2700B1937E /* ContentView.swift */,
+				61A121CC249102ED00B1937E /* SectionView.swift */,
 				61A121BD248FD49800B1937E /* RowView.swift */,
 				61A121C6248FDB0800B1937E /* TaskEditingView.swift */,
 			);
@@ -205,6 +208,7 @@
 				61A121BB248F9EE100B1937E /* NewTaskView.swift in Sources */,
 				61A121C92490F3BE00B1937E /* Task.Priority.swift in Sources */,
 				61A121A2248E8D2700B1937E /* AppDelegate.swift in Sources */,
+				61A121CD249102ED00B1937E /* SectionView.swift in Sources */,
 				61A121CB2490F4FC00B1937E /* TaskStore.PrioritizedTasks.swift in Sources */,
 				61A121A4248E8D2700B1937E /* SceneDelegate.swift in Sources */,
 				61A121C7248FDB0800B1937E /* TaskEditingView.swift in Sources */,
