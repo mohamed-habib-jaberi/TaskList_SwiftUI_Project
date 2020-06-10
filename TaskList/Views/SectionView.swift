@@ -13,6 +13,9 @@ struct SectionView: View {
     @Binding var prioritizedTasks: TaskStore.PrioritazedTasks
     
     var body: some View {
+        
+        Section(header: Text("\(prioritizedTasks.priority.rawValue.capitalized) Priority")){
+        
        ForEach(prioritizedTasks.tasks) { index in
               RowView(task: self.$prioritizedTasks.tasks[index])
         }
@@ -24,6 +27,7 @@ struct SectionView: View {
           .onDelete { indexSet in
               self.prioritizedTasks.tasks.remove(atOffsets: indexSet)
           }
+    }
     }
 }
 
