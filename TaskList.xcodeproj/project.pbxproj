@@ -23,6 +23,7 @@
 		61A121C92490F3BE00B1937E /* Task.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121C82490F3BE00B1937E /* Task.Priority.swift */; };
 		61A121CB2490F4FC00B1937E /* TaskStore.PrioritizedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121CA2490F4FC00B1937E /* TaskStore.PrioritizedTasks.swift */; };
 		61A121CD249102ED00B1937E /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121CC249102ED00B1937E /* SectionView.swift */; };
+		61A121CF2491285E00B1937E /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A121CE2491285E00B1937E /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		61A121C82490F3BE00B1937E /* Task.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.Priority.swift; sourceTree = "<group>"; };
 		61A121CA2490F4FC00B1937E /* TaskStore.PrioritizedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.PrioritizedTasks.swift; sourceTree = "<group>"; };
 		61A121CC249102ED00B1937E /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		61A121CE2491285E00B1937E /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				61A121C0248FD83500B1937E /* ForEach.swift */,
 				61A121C2248FD85C00B1937E /* IndexedCollection.swift */,
+				61A121CE2491285E00B1937E /* Binding.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				61A121C1248FD83500B1937E /* ForEach.swift in Sources */,
 				61A121B9248E8DE200B1937E /* TaskStore.swift in Sources */,
 				61A121C3248FD85C00B1937E /* IndexedCollection.swift in Sources */,
+				61A121CF2491285E00B1937E /* Binding.swift in Sources */,
 				61A121B7248E8D8100B1937E /* Task.swift in Sources */,
 				61A121BE248FD49800B1937E /* RowView.swift in Sources */,
 				61A121BB248F9EE100B1937E /* NewTaskView.swift in Sources */,

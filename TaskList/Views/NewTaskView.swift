@@ -21,6 +21,20 @@ struct NewTaskView: View {
         Form{
             TextField("Task Name", text: $text)
             
+            VStack{
+                Text("Priority")
+                Picker("Priority", selection: $priority.caseIndex) {
+
+                              ForEach(Task.Priority.allCases.indices) { periorityIndex in
+                                  Text(Task.Priority.allCases[periorityIndex].rawValue.capitalized )
+                                  .tag(periorityIndex)
+                                
+                              }
+                          }
+                          .pickerStyle(SegmentedPickerStyle())
+            }
+          
+             
             Button("Add"){
                 let priorityIndex = self.taskStore.getIndex(for: self.priority)
                 self.taskStore.prioritazedTasks[priorityIndex].tasks.append(

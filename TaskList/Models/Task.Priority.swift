@@ -9,7 +9,7 @@
 import Foundation
 
 extension Task{
-    enum Priority: String{
+    enum Priority: String, CaseIterable{
         case no, low, meduim, High
     }
 }
